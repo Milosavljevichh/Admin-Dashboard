@@ -104,7 +104,6 @@ h1,h2,h3,ul, li, button {
 .nav button:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
-    border:solid 2px #213555;
    }
 
 .sidebar {
@@ -138,14 +137,12 @@ h1,h2,h3,ul, li, button {
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px;
-    align-items: center;
-    justify-content: center;
-    
+    align-items: stretch;
+    justify-content:stretch;
 }
 
 .card {
     min-width: 300px;
-    height: 150px;
     padding: 25px;
     border-radius: 13px;
     display: grid;
@@ -169,9 +166,6 @@ h1,h2,h3,ul, li, button {
 .annoucments {
     grid-column: 2 /3;
     grid-row: 1 / 2;
-    /* display: grid;
-    justify-content: center;
-    align-items: center; */
 }
 
 .annoucment-content {
@@ -181,6 +175,19 @@ h1,h2,h3,ul, li, button {
     gap: 20px;
     border-radius: 15px;
     box-shadow: 0px 5px 12px grey;
+    min-width: 220px;
+}
+
+.info-title {
+    font-size: 1.1em;
+}
+
+.info {
+    align-self: center;
+}
+
+.card-description {
+    font-size: 1.05em;
 }
 
 .trending {
@@ -194,11 +201,11 @@ h1,h2,h3,ul, li, button {
 }
 
 .annoucment-content {
-    background-color: white;
+    background-color: #F5EFE7;
 }
 
 .trending-list {
-    background-color: white;
+    background-color: #F5EFE7;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 10px;
