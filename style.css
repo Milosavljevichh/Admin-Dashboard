@@ -10,6 +10,17 @@ body {
 img {
     width: 75px;
     height: 75px;
+    border-radius: 50%;
+}
+
+@font-face {
+    font-family: Main;
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+}
+
+p,
+h1,h2,h3,ul, li, button {
+    font-family: Main;
 }
 
 .container {
@@ -50,6 +61,7 @@ img {
     grid-template-columns: 1fr 2fr 2fr;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 7px 10px grey;
 }
 
 .nav-btns {
@@ -77,11 +89,15 @@ img {
     grid-template-rows: 1fr 1fr;
     padding: 15px;
     padding-right: 50px;
+    gap: 15px;
 }
 
 .projects {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+}
+
+.section-title {
     margin: 15px;
 }
 
@@ -100,6 +116,17 @@ img {
     height: 150px;
     padding: 25px;
     border-radius: 13px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    align-items: center;
+    border-left: solid 5px #4F709C;
+}
+
+.card-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: end;
+    gap: 20px;
 }
 
 .card p {
