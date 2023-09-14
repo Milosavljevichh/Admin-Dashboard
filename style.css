@@ -27,6 +27,17 @@ ul {
     list-style: none;
 }
 
+.menu-section p {
+    transition: all 1s;
+    text-decoration: none;
+}
+
+.menu-section p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -47,6 +58,7 @@ ul {
 .profile-picture {
     width: 50px;
     height: 50px;
+    justify-self: center;
 }
 
 .users-info {
@@ -73,31 +85,51 @@ ul {
     padding: 15px 50px 15px 50px;
     background-color: #F5EFE7;
     display: grid;
-    grid-template-columns: 1fr 4fr 4fr;
+    grid-template-columns: 1.5fr 1fr;
     justify-content: center;
     align-items: center;
     box-shadow: 0 10px 10px grey;
     gap: 20px;
 }
 
+.profile-overview {
+    display: flex;
+    gap: 15px;
+    /* align-items: center;
+    justify-content: center; */
+}
+
 .nav-profile-picture {
     justify-self: end;
 }
 
+.greeting-message {
+    display: grid;
+    justify-content: center;
+}
+
+.greeting {
+    align-self: end;
+    font-size: 16px;
+}
+
 .greeting-username {
     font-weight: bold;
+    font-size: 18px;
 }
 
 .nav-btns {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav button {
     background-color: #4F709C;
     color: white;
-    width: 150px;
-    height: 50px;
+    min-width: 6em;
+    min-height: 2.5em;
     border-radius: 25px;
     border: none;
     font-weight: bold;
@@ -127,7 +159,8 @@ ul {
     align-items: center;
 }
 
-.menu {
+.menu,
+.settings-menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -139,7 +172,8 @@ ul {
     gap: 12px;
 }
 
-.menu li {
+.menu li,
+.settings-menu li {
     font-weight: bold;
     font-size: 18px;
 }
