@@ -39,7 +39,15 @@ ul {
 }
 
 .green-theme {
-    background-color: #3D8361;
+    background-color: #41644A;
+}
+
+.changeTheme {
+    border: none;
+}
+
+.changeTheme:hover {
+    cursor: pointer;
 }
 
 .like-ico {
@@ -196,6 +204,7 @@ ul {
    }
 
 .sidebar {
+    transition: all .45s;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     /* background-color: #4F709C; */
@@ -280,7 +289,7 @@ ul {
 }
 
 .green-theme-card {
-    border-left: solid 5px #3D8361;
+    border-left: solid 5px #41644A;
 }
 
 .card-icons {
@@ -299,6 +308,7 @@ ul {
 }
 
 .feed-user-pic {
+    transition: all .4s;
     width: 3.5em;
     height: 3.5em;
     
@@ -309,7 +319,7 @@ ul {
 }
 
 .feed-user-pic-green-theme {
-    border: solid 3px #3D8361;
+    border: solid 3px #41644A;
 }
 
 .title-info {
@@ -354,6 +364,7 @@ ul {
 }
 
 .card {
+    transition: all .4s;
     background-color: #F5EFE7;
     
 }
@@ -383,6 +394,10 @@ ul {
     cursor: pointer;
 }
 
+.user img {
+    transition: all .4s;
+}
+
 .profile-pic-blue {
     border: solid 3px #213555;
 }
@@ -397,6 +412,7 @@ ul {
 }
 
 .profile-pic {
+    transition: all .4s;
     align-self: center;
     justify-self: center;
 }
